@@ -1,8 +1,8 @@
-import React from "react";
-import { useRouter } from "next/router";
+import React from 'react';
+import { useRouter } from 'next/router';
 
-import { getCategories, getCategoryPost } from "../../services";
-import { PostCard, Categories, Loader } from "../../components";
+import { getCategories, getCategoryPost } from '../../services';
+import { PostCard, Categories, Loader } from '../../components';
 
 const CategoryPost = ({ posts }) => {
   const router = useRouter();
@@ -10,8 +10,6 @@ const CategoryPost = ({ posts }) => {
   if (router.isFallback) {
     return <Loader />;
   }
-
-  console.log("router", router);
 
   return (
     <div className="container mx-auto px-10 mb-8">
