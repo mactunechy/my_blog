@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { grpahCMSImageLoader } from '../util';
 
 const PostCard = ({ post }) => (
-  <div className="bg-white shadow-lg p-0 lg:p-8 pb-12 mb-8">
+  <div className="bg-white shadow-lg p-0 lg:p-8 pb-12 mx-4">
     {/* <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
       <Image
         unoptimized
@@ -25,7 +25,7 @@ const PostCard = ({ post }) => (
       />
     </div>
 
-    <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-green-500 text-3xl font-semibold">
+    <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-green-500 text-3xl font-semibold px-2">
       <Link href={`/post/${post.slug}`}>{post.title}</Link>
     </h1>
     <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
@@ -63,7 +63,7 @@ const PostCard = ({ post }) => (
         </span>
       </div>
     </div>
-    <p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8">
+    <p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8i px-2">
       {post.excerpt}
     </p>
     <div className="text-center">

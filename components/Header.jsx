@@ -17,7 +17,7 @@ const Header = () => {
       <div className="border-b w-full inline-block border-green-400 py-8">
         <div className="md:float-left block">
           <Link href="/">
-            <span className="cursor-pointer font-bold text-4xl text-green-500">
+            <span className="cursor-pointer font-bold text-2xl md:text-4xl text-green-500">
               Code With Dellan
             </span>
           </Link>
